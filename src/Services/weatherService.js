@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
 
-const API_KEY = "db1798a9b5fcc61a608b29c4552e0500";
+const API_KEY = "b179df2d026c3649b34b744eb62d98c3";
 const BASE_URL = "https://api.openweathermap.org/data/2.5"
 
 const getWeatherData = (infoType, searchParams) => {
@@ -51,8 +51,8 @@ const formatForecastWeather = (data) => {
     hourly = hourly.slice(1, 6).map(d => {
         return {
             title: formatToLocalTime(d.dt, timezone, 'hh:mm a'),
-            temp: d.temp.day,
-            icon: d.weather[0].icon
+            temp: d.temp,
+            icon: d.weather[0].icon,
         }
     });
 
