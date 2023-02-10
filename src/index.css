@@ -10,3 +10,11 @@
         font-family: 'Poppins', sans-serif;
     }
 }
+
+.temperature{
+    @apply flex items-center justify-center py-6 text-xl text-cyan-300;
+}
+
+.btn-cta {
+    @apply bg-cyan-500 py-2 px-4 text-white hover:opacity-75 transition-all duration-150 cursor-pointer
+  }
